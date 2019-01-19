@@ -1,6 +1,7 @@
 .box1 ,.box2,.box3,.box4{
     height: 100vh;
     width:1000vw;
+/*      Mai comment hu */
 }
 /* vh , vw are viewport height and width of viewport */
 .box1{
