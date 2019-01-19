@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form method="get" action="#">
+		<p>
+		<input type="text" name="name" placeholder="username" minlength="3">
+		<input type="email" name="pass" placeholder="password">
+		</p>
+		<p>
+		<input type="radio" name="c1"  value="1" required>c1
+		<input type="radio" name="c1"  value="2" >c2
+		<input type="radio" name="c3" >c3
+		<!-- no use of placeholders in radiobuttons or checkboxes , use same names and different value to make groups in checkbox, no groups in checkbox -->
+		<!-- put required in any 1 of the radio buttons to make the whole group required -->
+		</p>
+		<p>
+		<input type="checkbox" name="choice1" value="choice1">choice1
+		<input type="checkbox" name="choice2" value="choice2">choice2
+		<input type="checkbox" name="choice3" value="choice3">choice3
+		<input type="submit" name="submit">
+		</p>
+		<p>
+			<label for="price">Price</label>
+			<input id="price" type="checkbox" name="price" value="1000">1000
+			<label for="price>1000">price in range >1000</label>
+			<input type="checkbox" id="price>1000" name="price2" value="1001">>1000
+			<!-- label are cementic so when screen reader reads use sirf label ke andar ka padhna hai and it won't read th e whole input tag for which the id is equal to the label for ,for that label ,we use css to stop seeing them normally,in css use visibility :hidden instead of display:none as it is none-->
+			<!-- Bootstrap :disdvantage: too many extra lines of code so slow , since it is a framework 
+			advatage: saves time -->
+		</p>
+	</form>
+</body>
+</html>

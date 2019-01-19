@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<header>
+		<h1>Cricket scores
+		</h1>
+	</header>
+	<main>
+		<header>
+			<h1>Match: India vs Pakistan</h1>
+		</header>
+
+		<!-- <aside>like page ko wo part jo fix hai and pure main page se alag hai(used in main)and content in aside is idirectly related to main page and usually has links to different parts of the page</aside> -->
+		<aside>
+			<a href=""> RIght link</a>
+			<a href="">left link</a>
+		</aside>
+		<section>	
+			<div>
+				<h1>India:</h1>
+				<p>India scored 188</p>
+				<figure>
+				<img src="https://timesofindia.indiatimes.com/thumb/msid-64991904,imgsize-724360,width-400,resizemode-4/64991904.jpg" alt="cricket">
+				<!-- in alt use '-' instead of ',' as screen readeer will interpret as different images,alt is for screen readers uske bin athey start reading image url -->
+				<figcaption>
+					<!-- includes description of image , is visible normally need to hide it sing css if we want to make it only for disabled who use screenreader -->dhoni ka 4
+				</figcaption>
+				<!-- figure is a sementic which automaticlly gives margin -->
+
+			</div>
+			<div>
+				<h1>Pakistan:</h1>
+				<article>
+				<p>Pakista harega bas
+				Pakistan is 228/8 in 2 overs
+				Paistan is 249/8 in 3 overs </p>
+				<pre>
+					Pakista harega bas
+				Pakistan is 228/8 in 2 overs
+				Paistan is 249/8 in 3 overs 
+				</pre>
+				<!-- difference b/w pre and p is pre mein jaisa likhenge vaisa hi ayega but parabraph mein sab ek ke bad ek ata hai -->
+				<time datetime="2018-12-26"> 26 december</time>
+				<!-- datetime is used to tell date to screenreader -->
+			</article>
+			<details>
+				<summary>
+					haa isko summarise karna hai
+				</summary>
+				summarise hoke ye bana
+				<details>
+				<summary></summary>
+				1
+				</details>
+				<details>
+				<summary></summary>
+				2
+				</details>
+				
+			</details>
+			</div>
+		</section>
+	</main>	
+	<footer>Credits: xyz</footer>
+	<!-- mkae sure to put footer in bottom as it doesn't by default, main is sementic as it is meaningful -->
+	<!-- article is a sementic tag use to group parasm,n -->
+</body>
+</html>
+<!-- use MDN instead of W3schools for reference -->

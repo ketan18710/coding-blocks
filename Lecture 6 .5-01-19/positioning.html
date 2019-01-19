@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="main.js"></script>
+    <style>
+        .box{
+            width: 50px;
+            height: 50px;
+            border: 2px solid red;
+            position: relative;
+        }
+        .box1{
+            width: 5px;
+            height: 5px;
+            border: 2px dashed black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        /* absolute mein jo layer pafent chahiye use box ka postion relatie karde */
+        /* absolute se mera alag layer mein chala jayega , use z-index to get many dfferent layers, zindex 1000 will appear over z-index 999 at same coordinates */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">
+        </div>
+    </div>
+</body>
+</html>
+<!-- card stack  -->

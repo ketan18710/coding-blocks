@@ -1,0 +1,21 @@
+<!-- remember to enable renew option while purchasing domain  names -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form method="post" action="/add" >
+		<!-- in action we specify action kya karna hai like agar same server pe bhej rahe hain data we don't need to gove full ip  just /(seomthing) and it will look for a js file method jisme mention hoga ki ye 'something' menthod call hone pe kya hoga,this wneeds a server set up to work-->
+		<!-- benefit of get -  you don't need to parse the submitted data on server ,browser khud encode arke behjega and server samajh lega -->
+		<!-- post may take slighlty more time since encoding mein time jayega, post mein aur restrictions hain like : no post inside a post method , so people prefer get method if security is not  a big concern -->
+		<!--** apart from form browser cannot do post request they crequestan only do get -->
+		<!-- form i scementic ,it combines various field datat taken as inputs and submits them together making it more effecient
+	 -->
+	 <input type="text" placeholder="username" name="username">
+	 <input type="password" name="password" placeholder="password">
+	 <input type="submit" name="bhejo">
+	</form>
+
+</body>
+</html>

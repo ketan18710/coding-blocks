@@ -1,0 +1,93 @@
+/*
+har box in aside mein text pe padding and boxes pe margin, 
+navigation bar mein display , bakground coor,font,padding ,margin*/
+*{
+	box-sizing: border-box;
+}
+.navigation li{
+	display: inline-block;
+	padding-right: 10px;
+	color: #CCFFCC;
+	padding-left: 0px;
+	margin: 0px;
+
+}
+.navigation{
+	background-color: #0099CC;
+	padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0px;
+   /* padding-left: 0px;*/
+}
+body{
+	display: inline-block;
+	margin: 0px;
+    color: #CCFFCC;
+	background-color: #003399
+
+
+}
+.head{
+	   background-color: #66CCFF;
+	color:yellow;
+	margin: 0px;
+	text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    align-content: center;
+    align-items: center;
+}
+#a{
+	width: 100px;
+}
+aside{
+	/*float: left;*/
+	display: inline-block;
+	text-align: left;
+	padding-left: 40px;
+	border: solid;
+	border-radius: 10px;
+	margin: 0px;
+	margin-left: 10px;
+	/*margin-right: 10px;*/
+	border-color: black;
+	height: 300px;
+	padding-top: 75px;
+	width:20%;
+	
+	
+}
+.cca{
+	display: inline-block;
+	width: 80%;
+	align-content: right;
+}
+#aside{
+	margin: 0px;
+}
+a{
+	color: #CCFFCC;
+	width: 40px
+	
+}
+section{
+	margin-left: 10px; 
+}
+strong{
+	color: #0099CC;
+}
+/*to centre image :*/
+img{
+	display: block;
+	margin: 0 auto;
+}
+figcaption{
+	text-align: center;
+}
+main{
+	    margin-left: -9px;
+}
+h1{
+	color: #CCFFCC;
+}

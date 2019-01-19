@@ -1,0 +1,23 @@
+.container{
+	display: flex;
+}
+.sec1{
+	display: flex;
+	background: red;
+	width: 10000px;
+	height:300px;
+}
+.div{
+	height: 300px;
+	width: 50%;	
+}
+.div1{
+	display: flex;
+	background-color: blue;
+	/*width: 50%;*/
+}
+.div2{
+	display: flex;
+	background-color: green;
+	/*width: 50%;*/
+}

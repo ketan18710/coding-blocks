@@ -1,0 +1,17 @@
+div > span >p{
+	color: red;
+	/*color every paragraph element inside span*/
+}
+div> span> #p1{
+	color: blue
+	/*color para #p1 inside span inside div*/
+}
+div + p{
+	background-color: blue;
+	/*change back color of element right after div*/
+}
+div ~ p
+{
+	color: yellow;
+	/*change background color of all p elemts after div*/
+}

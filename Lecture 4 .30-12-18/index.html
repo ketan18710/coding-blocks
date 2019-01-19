@@ -1,0 +1,66 @@
+<!-- css -->
+<!-- 3 types: inline, internal,external -->
+<!-- never use colors: red on blue,blue on red and red and blue on black -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	 <style type="text/css">
+		p{
+			color: purple;
+			background-color: black;
+			font-weight: 
+		}
+		#msg{
+			color: blue;
+			background-color: white;
+			/*font-size: '1000';*/
+		}
+		#msg1{
+			color: green;
+			/*background-color: red;*/
+		}
+		/*we use '#' to style id and '.' for class*/
+		.a{
+			color: red ;
+			background-color: yellow;
+		}
+		.b{
+			color: blue ;
+			background-color : red;
+			font-family: 
+		}
+		/*rule of cascadong jo neeche ayega uski priority zyada i.e. uska style lagega,but id ke case mein uska priority normal dusre tags se zyada hoga*/
+	</style> 
+</head>
+<body>
+	<div>
+		<p>
+			hello world
+		</p>
+		<p id="msg msg1" class="a">
+			ff
+			<!-- id unique ,class can be same -->
+			<!-- even if 2 id tags are used the one written in the last in the styling sheet will be used and pichle wale ka no effect -->
+		</p>
+		<p class="a ">
+			hi1
+		</p>
+		<p>
+			hi2
+		</p>
+		<p class="a b">
+			hi3
+		</p>
+		<p class="b a">
+			hi4
+		</p>
+		<!-- from hi3 and hi4 ,if we have 2 class names in class to style sheet mein jo neeche hoga class wahi bakoiyo ko override karega -->
+
+		<!-- priority: id > clas>tag -->
+		<!-- for effecient code we need to minimise no. of overrides in styling --> 
+		<!-- margin difference b/w outer boxes , padding dfferece betwwen inner boxes,i.e meri and mere kapdo ke beech mein dst is pading and distance btw me and another guy is margin -->
+	</div>
+</body>
+</html>

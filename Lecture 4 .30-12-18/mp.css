@@ -1,0 +1,36 @@
+*{
+	box-sizing: border-box;
+	/*use this to ensure ek limit tak iner box ki padding increase karne par outer box ka size cham=nge nahi hoga*/
+}
+/*innerbox ki width + padding hamesha outer box ki width se xyada nahi honi chahiye warna border box ke sath bhi wo outerbox se bahar chala jayega and outerbox ka size increase hone lagega,so hame manually calculate karna padega*/
+.outerbox{
+	border: 1px solid  brown;
+	width: 200px;
+	height: 100px;
+	font-size: 150%;
+	color: green;
+}
+.innerbox{
+	border: 2px dashed  ;
+	border-color: red;
+	width: 80px;
+	height: 50px;
+	margin-left: 10px;
+	background: red;
+	background: 
+}
+/*box properties like border , width ,height ,margin,padding are not inherited but others like background color etc. are*/
+/*in css all properties can be inherited*/
+/*here inheritence is through nesting like innerbox is child of outerbox*/
+/*form element mein properties inherit automatically inherit nahin hoti*/
+/*for eg. form mein submit button  mein color inheit karne ko uski styling mein color: inherit*/
+#aaa{
+	color: inherit;
+	background: inherit;
+	background-color: inherit;
+}
+#bbb{
+	color: inherit;
+	background: inherit;
+}
+/*use w3.org to see documentation of properties which can be inherited*/
