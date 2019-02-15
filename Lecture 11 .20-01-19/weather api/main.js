@@ -38,13 +38,13 @@ $(document).ready(function(){
         let city = inp.val()
         let key = '6d7183eed5a64694bcd32919192401'
         $.ajax({
-            url :`http://api.apixu.com/v1/current.json?key=${key}&q=${city}`,
+            url :`https://api.apixu.com/v1/current.json?key=${key}&q=${city}`,
             method : 'GET',
             success : function(data){
                 c_area.css("display", "block");
                 content.css("display","none");
                 c_r.css("display","block");
-                change(data.current.temp_c)
+                change(data.current.temp_c);
                 loader.css("display", "none");
                 console.log(data)
             },
