@@ -36,8 +36,12 @@ app.post('/add',(req,res)=> {
     db.insertDoc(data);
     res.send(taskArray);
 })
-app.get('/del',(req,res)=>{
-    console.log('working');
+app.post('/del',(req,res)=>{
+    console.log(taskArray);
+    data = Object.values(req.body)[0];
+    let index = taskArray.indexOf(data);
+    taskArray.splice(index,1);
+    console.log(taskArray);
 })
 app.listen(port, () => {
     console.log(`Listening at ${port}`);
