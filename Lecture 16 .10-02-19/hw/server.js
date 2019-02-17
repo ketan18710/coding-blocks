@@ -2,13 +2,13 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const db = require('./db');
-const port = process.env.PORT|| 5002 ;
+const port = process.env.PORT|| 5003 ;
 
  var bodyParser = require('body-parser')
  app.use(bodyParser.urlencoded({ extended: false }));
  app.use(bodyParser.json());
 app.use(bodyParser.text());
-const taskArray = [];
+var taskArray = [];
 /**
  * express.static 
  * @function - It delievers static resources
@@ -42,8 +42,28 @@ app.post('/del',(req,res)=>{
     let index = taskArray.indexOf(data);
     taskArray.splice(index,1);
     console.log(taskArray);
+    db.delDoc(data);
+
+})
+app.post('/update',(req,res)=>{
+    console.log(taskArray);
+    o_data = Object.values(req.body)[0];
+    u_data = Object.values(req.body)[1];
+    let index = taskArray.indexOf(o_data);
+    taskArray[index] = u_data;
+    console.log(taskArray);
+    db.udtDoc(o_data,u_data);
 })
 app.listen(port, () => {
     console.log(`Listening at ${port}`);
-    db.connect();
+    db.connect(function(){
+        fill_list();
+    });
+
 });
+function fill_list(){
+    db.getValues(function(data){
+        taskArray = data;
+        console.log(taskArray);
+    })
+}
