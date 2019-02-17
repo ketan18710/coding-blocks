@@ -9,27 +9,9 @@ const port = process.env.PORT|| 5003 ;
  app.use(bodyParser.json());
 app.use(bodyParser.text());
 const taskArray = [];
-/**
- * express.static 
- * @function - It delievers static resources
- * @param {public dir path}
- * @param {__dirname} - It is the currect directory path of server.js
- */
-app.use('/',express.static(path.join(__dirname,'frontend')));
-// app.post('/addTodo', (req,res)=>{
-//    let task = req.body;
-//    console.log(task);
-//    key = Object.keys(task)[0]
-//    val = Object.values(JSON.parse(task))[0]
-// //    console.log(val);
-//     db.insertDoc(key,val)
-// //    taskArray.push(task);
-//    res.sendStatus(200);
-// });
 
-// app.get('/data', (req,res)=>{
-//     res.send(taskArray);
-// })
+app.use('/',express.static(path.join(__dirname,'frontend')));
+
 app.post('/add',(req,res)=> {
     data = req.body;
     taskArray.push(Object.values(data)[0]);
