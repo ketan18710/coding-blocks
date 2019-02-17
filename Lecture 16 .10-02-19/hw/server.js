@@ -8,7 +8,7 @@ const port = process.env.PORT|| 5003 ;
  app.use(bodyParser.urlencoded({ extended: false }));
  app.use(bodyParser.json());
 app.use(bodyParser.text());
-var taskArray = [];
+const taskArray = [];
 /**
  * express.static 
  * @function - It delievers static resources
@@ -51,19 +51,23 @@ app.post('/update',(req,res)=>{
     u_data = Object.values(req.body)[1];
     let index = taskArray.indexOf(o_data);
     taskArray[index] = u_data;
-    console.log(taskArray);
     db.udtDoc(o_data,u_data);
+    console.log(taskArray);
+})
+app.get('/in_display',(req,res)=>{
+    res.send(taskArray);
 })
 app.listen(port, () => {
     console.log(`Listening at ${port}`);
     db.connect(function(){
         fill_list();
     });
-
+    
 });
 function fill_list(){
     db.getValues(function(data){
-        taskArray = data;
-        console.log(taskArray);
+        for(i = 0;i<data.length;i++){
+            taskArray.push(data[i]);
+        }
     })
 }

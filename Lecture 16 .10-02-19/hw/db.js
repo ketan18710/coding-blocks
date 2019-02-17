@@ -27,8 +27,8 @@ function delDoc(val){
 }
 function udtDoc(o_data,u_data){
     collection.updateOne(
-        {'data' : 'a'},
-        {$set : {'data': 'c'}}
+        {'data' : o_data},
+        {$set : {'data': u_data}}
         ,function(err,result){
             if (err) throw err;
             console.log('updated');

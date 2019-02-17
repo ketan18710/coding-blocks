@@ -1,4 +1,5 @@
-<link rel="shortcut icon" href="#" />let id = $('#em');
+<link rel="shortcut icon" href="#" />
+let id = $('#em');
 let password = $('#password');
 let btn = $('#btn');
 btn.click(function(){
