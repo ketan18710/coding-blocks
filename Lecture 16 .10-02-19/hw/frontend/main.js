@@ -7,11 +7,7 @@ let content = document.getElementById('content');
 in_display();
 btn.click(function(){
     console.log('www')
-//     $.ajax({
-//         url : `/add`,
-//         method : 'post',
-//         data : JSON.stringify({'k' : 'abc'})
-//     })
+
     $.post('/add',{'data' : inp.val()},function(data){
         display(inp.val())
     })
