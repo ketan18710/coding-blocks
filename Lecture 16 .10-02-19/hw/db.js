@@ -31,6 +31,7 @@ function udtDoc(o_data,u_data){
         {$set : {'data': u_data}}
         ,function(err,result){
             if (err) throw err;
+            
             console.log('updated');
         }
     )

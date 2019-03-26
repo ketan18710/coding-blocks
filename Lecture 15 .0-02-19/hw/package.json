@@ -1,11 +1,25 @@
 {
   "name": "lecture-14",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "ketan",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ketan18710/todo"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "bugs": {
+    "url": "https://github.com/ketan18710/todo/issues"
+  },
+  "homepage": "https://github.com/ketan18710/todo#readme",
+  "description": ""
 }

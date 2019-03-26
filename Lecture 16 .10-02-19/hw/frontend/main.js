@@ -53,4 +53,6 @@ function display(data){
             location.reload();
         })
     })
+    let line = document.createElement('hr');
+    li.appendChild(line);   
 }
