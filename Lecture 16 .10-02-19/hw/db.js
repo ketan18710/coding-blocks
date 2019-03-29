@@ -10,8 +10,6 @@ function connect(cb) {
         if(err) throw err;
         let db = client.db(dbname);
         collection = db.collection('tasks');
-        // insertDoc();
-        //console.log(db);
         cb();
     })
 }

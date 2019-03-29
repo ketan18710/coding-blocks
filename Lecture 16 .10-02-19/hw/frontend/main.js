@@ -7,11 +7,7 @@ let content = document.getElementById('content');
 in_display();
 btn.click(function(){
     console.log('www')
-//     $.ajax({
-//         url : `/add`,
-//         method : 'post',
-//         data : JSON.stringify({'k' : 'abc'})
-//     })
+
     $.post('/add',{'data' : inp.val()},function(data){
         display(inp.val())
     })
@@ -53,6 +49,10 @@ function display(data){
             location.reload();
         })
     })
+<<<<<<< HEAD
     let line = document.createElement('hr');
     li.appendChild(line);   
 }
+=======
+}
+>>>>>>> 30d655b0f2163dc65a77bba6043f40c65e74ac78
